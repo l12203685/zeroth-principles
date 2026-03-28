@@ -103,6 +103,38 @@ $$\text{MAFE ratio} = \frac{\text{MAE}}{\text{MFE}}$$
 
 ---
 
+## MAEMFE 精細化分析
+
+標準 MAEMFE 預設逆勢交易（Ricky 原始方法論，FX 為主）。應用到趨勢型商品需要調整：
+
+**關鍵差異**：
+- 逆勢交易：MFE 發生在 MAE 之前（先到達目標再承受逆境）
+- 順勢交易：MFE 發生在 MAE 之後（先承受逆境再到達目標）→ 使用 Global（全域）而非 Local 定義
+
+```
+Global MAE = entry - min(intra-trade low)   # 持倉期間最大逆境
+Global MFE = max(intra-trade high) - entry  # 持倉期間最大順境
+```
+
+**四象限分解**：每支策略拆成多單/空單 × 勝手/敗手，各自分析，避免混合訊號掩蓋結構問題。
+
+**停損設置方法（從 PnL 分佈推導）**：
+
+| 方法 | 位置 | 適用 |
+|------|------|------|
+| Q1（PnL count） | 避免極端損失 | 較大 SL，逆勢策略 |
+| Q2（PnL count） | 篩掉大量小虧，保留少數大獲利 | 較小 SL，順勢策略 |
+| Win Trade Frontier | MAE scatter 中的勝負分界線 | 最精確，但需樣本夠大 |
+
+**體質判斷（MAE 分佈形狀）**：
+- 左偏或對稱 → 健康，大部分交易逆境小
+- 半峰（趨勢策略）→ 持有期間變化大，正常
+- 峽峰 → 參數過度敏感，頻繁交易，需注意
+
+**Edge-Ratio = MFE / MAE**。這個比率的分佈比單純的 NetProfit 和 MDD 更能揭示策略體質。投組多樣化時，用 Edge-Ratio 分布的相關性比用績效曲線相關性更準。
+
+---
+
 ## 技術架構（trading_core）
 
 從 17 個重複 repo 合併而來：
