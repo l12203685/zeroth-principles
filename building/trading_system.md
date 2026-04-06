@@ -79,3 +79,56 @@ strategy/    策略抽象基底
 ```
 
 設計決策：所有憑證走 `.env`，不入版控。
+
+---
+
+## 策略核心機制（實戰驗證）
+
+| 機制 | 說明 |
+|------|------|
+| **avgdis** | 通用自適應距離：`avg(max(\|Hi-C[-1]\|, \|Lo-C[-1]\|, \|Hi[-1]-Lo[-1]\|))`，clip [100,300]pts。同時驅動進場/停損/停利/追蹤出場。非固定參數，隨市場狀態調整。 |
+| **Session-end entries** | 進場集中在 AM session 最後 N 分鐘（1m K線，time-gated）。偵測動量耗盡（price 二階導數）。收盤前均值回歸，非開盤追勢。 |
+| **NH equity adaptive** | 追蹤策略是否正在創權益新高。NH mode: stops 收緊、倉位放鬆；Drawdown mode: 反之。系統化資金管理嵌入信號邏輯。 |
+| **Daily cap** | `y+z < 2`：每日最多 1-2 筆進場，不管信號多少。結構性防過度交易。 |
+| **Settlement full exit** | `LastTradeDay(d)` 無條件平倉所有部位。不跨結算。 |
+| **SBF slope×kbar** | `slope = day_ATR(20) / day_len`（波動率正規化漂移率），乘以 session 開盤以來經過 bar 數。價格「飄夠遠」才進場——無指標的 momentum filter。 |
+| **Reverse-entry on profit** | 獲利中遇到急反轉信號 → 翻倉（不只平倉）。同日捕捉反向行情。 |
+
+**核心績效指標**：SQN 為主要系統品質信號（非只看 Sharpe）。
+**成本模型**：手續費 0.025%/筆，最小 2.5 ticks，大台點值 200。
+
+---
+
+## 量化交易哲學
+
+> "Huge bias toward inaction — top guys take a few big trades a year."
+
+> "In efficient markets, active trading has negative EV against time-opportunity-cost baseline unless you have a structural edge."
+
+結構性優勢 = 速度（自動化）+ 利基市場（台指期日內）+ 系統化不作為。
+
+---
+
+## Alternative Data 框架（財神爺）
+
+一個用 user browsing behavior 預測股價的系統，展示 alternative data → signal 的完整流程。
+
+**核心假說**：某些用戶的瀏覽行為能預測隔日股價漲跌。
+
+**架構**：
+1. Raw data: user browsing logs → stock code mapping
+2. Per-user predictive power: avg(next-day return on days user browsed)
+3. Noise filter: weight by `(10 - max(|highest gain|, |highest loss|)) / 10`（去除被漲跌幅吸引的 momentum chasers）
+4. Confidence: rolling 15-65 day correlation between predicted and actual returns
+5. Signal: weighted average of high-predictive-power users visiting today
+6. Portfolio: top 5 stocks by expected return × confidence
+
+**關鍵 insight**：「使用者會被漲跌幅騙進來」— 噪音過濾本身就是 edge。
+
+**方法論原則**：
+- 「驗證才是最難的部分，不要急著弄出太多假設」
+- 「嘗試弄出最小的測試架構，抓大放小」
+- 「找出最有價值的假設，排除最大的雜訊」
+- 「可能只是運氣好」（+2% backtest → 保持懷疑）
+
+直接對應本質三步引擎：strip noise → essential signal → minimum viable test。
