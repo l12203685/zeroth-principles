@@ -134,6 +134,20 @@ LIVE → 監控 → 下架觸發？ → 備選庫 → 復活條件？ → LIVE
 
 ---
 
+## 跨域同構：導數思維 × 權益曲線管理
+
+三套策略共享一個本質結構，而這個結構映射到 Edward 的所有決策域：
+
+| 交易策略 | 撲克 | 人生決策 |
+|---------|------|---------|
+| FDT 二階導數進場（不看方向，看方向的變化率） | 不看牌面，看對手 betting pattern 的變化 | 不看現狀，看趨勢的拐點 |
+| LT NH 權益曲線管理（贏→放、輸→收） | Bankroll management（上風期擴張，下風期收縮） | FIRE 路徑中的 conviction-based sizing |
+| SBF 長短不對稱（long 1.5x, short 6.5x） | 資訊不對稱下的 default 策略（不確定時偏向安全） | 不可逆決策需要更高 threshold |
+
+本質：**看導數不看水平，用 meta-strategy 管理 strategy。**
+
+---
+
 ## 量化交易哲學
 
 > "Huge bias toward inaction — top guys take a few big trades a year."
