@@ -1,0 +1,33 @@
+two points I'd make here.
+
+First is - I agree with G - for the vast majority of people, the right strategy with regard to investing/personal finance is to do as little as possible. if you have a high income (everyone reading this does, or can expect to if they are diligent for a few years) and you invest as much as you can, as passively as you can, you will be a multimillionaire in 5-10 years. this is just numbers/compounding. 
+
+many thousands of peoples ONLY job is to find inefficiencies in traditional markets. they are highly incentivised to do well, and they are not dumb. the speed/accuracy with which the market reacts to information is essentially a modern wonder - google about how markets reacted to the challenger space shuttle disaster for a nice illustration (and realise that this was decades ago, obviously things have come on a huge distance since then). in light of this, to casually say that most sp500 companies are -EV bets is honestly kinda naive. (sorry @jorge)
+
+the hard statistical truth is that when people are using some 'active' investing strategy (trying to time the market, trying to pick companies that outperform etc), the vast majority lose money relative to simple buy/hold or DCAing. for a more detailed look at this, I'd HIGHLY recommend 'the psychology of money' (I'd highly recommend it anyway tbh, even if you have no intention of trying to trade). 
+
+obviously that doesn't mean that no one can win - not all markets are as efficient as American equities, and even in those that are some players find ways to win (usually by using technology to have an information edge or react faster than average). but it does mean the odds are stacked against you as an individual competing directly against teams of computing/physics PhDs. This gets even more true considering your time has an opportunity cost - any hour you spend trying to outperform the low-effort baseline (spot  BTC/sp500 depending on your beliefs) is an hour you could have spent grinding a very solid hourly. 
+
+I once modelled this actually - I can dig it out if anyone's interested - if someone has let's say $100k networth, and spends all their time successfully beating the market and compounding their money at 10%/year, how does that play out relative to the same guy with $100k networth who invests it passively at 5%/year but spends his time grinding out $10k/month? This example is kinda clear - the guy who keeps grinding ends up with way more money over any non-enormous timeframe (probably actually any timeframe... I haven't checked and compounding is fucked). 
+
+It does get closer as the amounts of money get larger, but this sim obviously assumes completely linear outperformance over time, which is a massive over-simplification. In practise, the guy outperforming is almost certainly taking on far more risk relative to his grinder mate - how's he going to be performing when he's way down/way up relatively speaking? Poker analogies abound here.
+
+Also - we've assumed this guy is somehow in the tiny proportion of people who truly can outperform the market - in reality we live in a world where we're not sure if we're that guy (though we'd all love to believe we are). In order to KNOW that we are not in the deluded majority, we'd need a sample size of successful trades way larger than we can ever hope to achieve in a lifetime. Even so, EVEN IF WE ARE THE TOP 1% WINNING GUY, there are plenty timelines where we lose (or win) a bit relative to our baseline and then have a crisis of confidence (/overconfidence) and give up/blow up/pivot to something else. Variance in trading makes variance in poker look like absolute nothing (anyone who knows Awice will know what I mean here..). 
+
+So - point 1 - in a world where we:
+- have high hourly
+- can't be sure of our edge
+
+Active trading without inside information in traditional markets is a bad idea.
+
+Which brings me to point 2:
+
+If we're still seduced by the idea of free money, what is our most likely/highest hourly plan for beating the market?
+
+This is a little bit more subjective, but imo if will likely include:
+1) a huge bias towards inaction. most days/situations are uneventful, there is very rarely that much to do. top guys tend to take a few big trades a year, and spend most of their time managing their mental health (HARD to do) and sitting on their hands. they are always ready to act if things change, but the fact is they very rarely do. 
+2) focussing on niche spots. in the last few years I think that's essentially meant farming airdrops/points programs etc - getting paid to take small risks so that startup founders can show VCs growth, take their money and share it with you for the service. you can't really make money if you're playing vs Goldman Sachs.
+
+I'm probably missing a bunch of others, and of course this is not a recipe for success - anyone could do these things and still fuck it up in any one of a thousand ways. 
+
+this has turned into a bit of a rant now, so I'll try and wrap up - my own experience is that making money at trading type things is truly hard. if it can be done, I think it's best to always be half interested, but need a very high bar to actually do anything in terms of buying/selling something - probably today isn't the day you've stumbled upon some overlooked thing, and you are not going to get any useful/actionable information looking at the 5m BTCUSD chart on binance.
