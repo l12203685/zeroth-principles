@@ -86,3 +86,21 @@ MDD + 存活率 > 報酬率
 ```
 
 關鍵是**寫入系統**。想通了但沒有寫下來，三個月後還是會犯同樣的錯。
+
+---
+
+## Feedback Loop 護城河（跨域統一原則）
+
+> 「最有價值的假設，排除最大的雜訊。」
+
+任何領域的優勢建立流程：
+1. **假說最小化** — 不要同時測太多假設。最小可驗證單元。
+2. **噪音過濾即邊界** — 你過濾掉什麼 = 你的 edge。在量化交易：filter momentum chasers。在 alternative data：filter users attracted by today's price move。在生活：filter 低價值社交。
+3. **驗證 > 理論** — 「可能只是運氣好」是永遠要問的問題。Backtest +2% ≠ edge confirmed。
+4. **結構性不作為** — "Huge bias toward inaction." 不做的決策品質 ≥ 做的決策品質。Top performers take few big bets, not many small ones.
+
+這個框架從量化交易延伸到：
+- **知識管理**：strip noise → essential signal → minimum viable test = 去蕪存菁
+- **人際關係**：filter low-value social → preserve cognitive bandwidth for core decisions
+- **投資組合**：簡單平均 > 最佳化權重。過度優化 = 過度擬合。
+- **Agent 系統設計**：diminishing returns ≠ zero returns，但要知道什麼時候該停。
