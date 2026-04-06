@@ -89,6 +89,25 @@ MDD + 存活率 > 報酬率
 
 ---
 
+## Learning OS
+
+Edward 在所有領域用同一套學習方法：
+
+```
+Record → Review → Ask Expert → Adjust
+```
+
+| 領域 | Record | Review | Ask Expert | Adjust |
+|------|--------|--------|-----------|--------|
+| 羽球 | 錄比賽影片 | 標記問題時間點 | 傳給教練分析 | 修正腳步/揮拍 |
+| 交易 | 策略績效報表 | MAE/MFE 分析 | 跟達哥/Ricky 討論 | 調參數/下架 |
+| 阿瓦隆 | 牌譜記錄 | 逐手邏輯分析 | 跟皓子/群組討論 | 修正派票框架 |
+| 數位永生 | JSONL/DNA | 深讀+交叉比對 | Edward 校準 | 更新 DNA/boot_tests |
+
+Kernel 是做決策的工具。Learning OS 是獲取新 kernel 的方法。
+
+---
+
 ## Meta-System Pattern
 
 在任何系統內達到上限後，開始改系統本身。Kernel（五個核心原則）不變，application layer 升級。
