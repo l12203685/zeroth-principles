@@ -15,9 +15,11 @@
 
 | File | 本質 |
 |------|------|
-| [trading_system.md](building/trading_system.md) | 交易憲法 + 原創策略機制（avgdis/NH/SBF/FDT）+ 投組最佳化 + 策略生命週期 |
+| [trading_system.md](building/trading_system.md) | 交易憲法 + 原創策略機制（avgdis/NH/SBF/FDT）+ 投組最佳化 + 跨域同構表 |
 | [investment_first_principles.md](building/investment_first_principles.md) | 六大投資定律。物理層限制。 |
 | [poker_quant_bridge.md](building/poker_quant_bridge.md) | Poker→Trading 跨域映射。RoR/Kelly/MC 是同一套數學。 |
+| [digital_twin_methodology.md](building/digital_twin_methodology.md) | 數位永生方法論。失敗模式 + 兩條路線 + Procedural gap + 遞迴引擎。 |
+| [domain_quantification.md](building/domain_quantification.md) | 零到系統方法論。Avalon 為 proof of concept。 |
 | [philosophy.md](building/philosophy.md) | 為什麼建這些。 |
 | [trading_core/](building/trading_core/) | Python 量化函式庫。本質的程式碼實作。 |
 
