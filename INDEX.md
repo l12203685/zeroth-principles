@@ -1,36 +1,29 @@
-# zeroth-principles — Knowledge Index
+# INDEX — ZP
 
-> 只收本質。第三方知識在 investment-knowledge-base。
+> Public methodology: decision frameworks, trading, digital twin. 只收 Edward 原創或吸收轉化後的本質。
 
----
+## Map
+| Path | Purpose |
+|------|---------|
+| `thinking/framework.md` | 3-step engine + 5 axioms |
+| `thinking/avalon.md` | Bayesian incomplete-info reasoning |
+| `building/trading_system.md` | Trading constitution + 原創策略 (avgdis/NH/SBF/FDT) |
+| `building/investment_first_principles.md` | 6 investment laws |
+| `building/poker_quant_bridge.md` | Poker→Trading mapping |
+| `building/digital_twin_methodology.md` | Digital immortality method |
+| `building/domain_quantification.md` | Zero-to-system method |
+| `building/trading_core/` | Python quant lib |
+| `agent/prompt.md` | Public boot prompt |
 
-## thinking/ — 決策引擎
-
-| File | 本質 |
+## Task navigation
+| Task | Read |
 |------|------|
-| [framework.md](thinking/framework.md) | 三步引擎 + 五大公設 + Feedback Loop 護城河。所有決策的作業系統。 |
-| [avalon.md](thinking/avalon.md) | 不完整資訊推理。六公理 + Bayesian 更新。跨域：遊戲→交易→人際。 |
+| Decision framework | `thinking/framework.md` |
+| Trading strategy | `trading_system.md` → `investment_first_principles.md` |
+| Cross-domain transfer | `poker_quant_bridge.md` → `avalon.md` |
+| Digital twin work | `digital_twin_methodology.md` |
+| New domain quant | `domain_quantification.md` → `framework.md` |
+| Quant lib usage | `trading_core/README` → module |
 
-## building/ — 系統實作
-
-| File | 本質 |
-|------|------|
-| [trading_system.md](building/trading_system.md) | 交易憲法 + 原創策略機制（avgdis/NH/SBF/FDT）+ 投組最佳化 + 跨域同構表 |
-| [investment_first_principles.md](building/investment_first_principles.md) | 六大投資定律。物理層限制。 |
-| [poker_quant_bridge.md](building/poker_quant_bridge.md) | Poker→Trading 跨域映射。RoR/Kelly/MC 是同一套數學。 |
-| [digital_twin_methodology.md](building/digital_twin_methodology.md) | 數位永生方法論。失敗模式 + 兩條路線 + Procedural gap + 遞迴引擎。 |
-| [domain_quantification.md](building/domain_quantification.md) | 零到系統方法論。Avalon 為 proof of concept。 |
-| [philosophy.md](building/philosophy.md) | 為什麼建這些。 |
-| [trading_core/](building/trading_core/) | Python 量化函式庫。本質的程式碼實作。 |
-
-## agent/
-
-| File | 用途 |
-|------|------|
-| [prompt.md](agent/prompt.md) | 公開版 Agent 啟動提示詞 |
-
----
-
-**核心思維鏈**：本質思維 → 量化驗證 → 系統設計 → 實作 → 跨域應用
-
-**ZP 收錄標準**：Edward 原創或吸收轉化後的本質。第三方知識不收。
+## Skip
+- `trading_core/` source (README first), `building/philosophy.md`, `README.md`
