@@ -14,13 +14,14 @@
 | `building/domain_quantification.md` | Zero-to-system method |
 | `building/trading_core/` | Python quant lib |
 | `building/risk_control_four_layers.md` | 風控四層架構 (crypto prop desk → general) |
+| `building/taiwan_futures_local_toolkit.md` | 台灣期貨在地工具包 (CDP/結算/日內/交易次數上限) |
 | `agent/prompt.md` | Public boot prompt |
 
 ## Task navigation
 | Task | Read |
 |------|------|
 | Decision framework | `thinking/framework.md` |
-| Trading strategy | `trading_system.md` → `investment_first_principles.md` |
+| Trading strategy | `trading_system.md` → `investment_first_principles.md` → `taiwan_futures_local_toolkit.md` |
 | Cross-domain transfer | `poker_quant_bridge.md` → `avalon.md` |
 | Digital twin work | `digital_twin_methodology.md` |
 | New domain quant | `domain_quantification.md` → `framework.md` |
