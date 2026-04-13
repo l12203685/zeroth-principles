@@ -13,6 +13,7 @@
 | `building/digital_twin_methodology.md` | Digital immortality method |
 | `building/domain_quantification.md` | Zero-to-system method |
 | `building/trading_core/` | Python quant lib |
+| `building/risk_control_four_layers.md` | 風控四層架構 (crypto prop desk → general) |
 | `agent/prompt.md` | Public boot prompt |
 
 ## Task navigation
