@@ -17,6 +17,8 @@
 | `building/taiwan_futures_local_toolkit.md` | 台灣期貨在地工具包 (CDP/結算/日內/交易次數上限) |
 | `building/entry_diversity_exit_convergence.md` | 進場多樣性 vs 出場收斂 (alpha 在進場，存活在出場) |
 | `building/milestone_vs_drift_audit.md` | 里程碑 vs 漂移觸發審計 (主動偵測 vs 被動止損) |
+| `building/optimization_ceiling_structural_edge.md` | 最佳化天花板 vs 結構邊際 (紙上最佳解 vs 可執行解) |
+| `building/regime_as_input_not_background.md` | Regime 是輸入不是背景 (label 化驅動邏輯切換) |
 | `agent/prompt.md` | Public boot prompt |
 
 ## Task navigation
