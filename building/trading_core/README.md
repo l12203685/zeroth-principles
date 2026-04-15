@@ -37,6 +37,12 @@ trading_core/
 │   ├── __init__.py
 │   └── base.py          # BaseStrategy 抽象類別，所有策略繼承
 │
+├── backtest/            # M2 MVP backtest harness (decoupled)
+│   ├── __init__.py
+│   ├── harness.py       # Backtester + BacktestConfig + Signal/Trade/BarContext
+│   ├── strategies.py    # Example strategies (sma_cross_strategy)
+│   └── tests/           # pytest unit tests for harness
+│
 ├── requirements.txt     # 依賴套件
 ├── .env.example         # 環境變數範本
 └── README.md           # 本檔案

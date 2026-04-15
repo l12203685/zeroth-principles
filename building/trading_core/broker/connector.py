@@ -5,6 +5,8 @@ Merged from 17 instances of shioaji initialization across:
 - AlgoTrading/backtest.py and other scripts
 """
 
+from __future__ import annotations
+
 import os
 import json
 import logging
@@ -12,9 +14,11 @@ from typing import Optional
 from datetime import datetime, timedelta
 
 try:
-    import shioaji as sj
-except ImportError:
-    raise ImportError("shioaji package required. Install with: pip install shioaji")
+    import shioaji as sj  # type: ignore
+except ImportError:  # pragma: no cover — optional dep
+    # Defer the failure to the first real broker call so non-broker
+    # modules (analytics, backtest, etc.) can import without shioaji.
+    sj = None  # type: ignore
 
 from trading_core.config import Settings, get_settings
 
@@ -29,7 +33,7 @@ class BrokerConnector:
     """
 
     _instance: Optional["BrokerConnector"] = None
-    _api: Optional[sj.Shioaji] = None
+    _api: Optional["sj.Shioaji"] = None  # type: ignore[name-defined]
 
     def __new__(cls, settings: Optional[Settings] = None):
         """Singleton pattern - return same instance."""
@@ -88,6 +92,11 @@ class BrokerConnector:
         Raises:
             ConnectionError: If login fails.
         """
+        if sj is None:
+            raise ImportError(
+                "shioaji package required for live broker. "
+                "Install with: pip install shioaji"
+            )
         logger.info("Creating new Shioaji API connection...")
         api = sj.Shioaji()
 
