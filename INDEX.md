@@ -19,6 +19,7 @@
 | `building/milestone_vs_drift_audit.md` | 里程碑 vs 漂移觸發審計 (主動偵測 vs 被動止損) |
 | `building/optimization_ceiling_structural_edge.md` | 最佳化天花板 vs 結構邊際 (紙上最佳解 vs 可執行解) |
 | `building/regime_as_input_not_background.md` | Regime 是輸入不是背景 (label 化驅動邏輯切換) |
+| `building/negative_list_priority.md` | 負面清單優先於正面目標 (約束=存活語法，目標=成長語義) |
 | `agent/prompt.md` | Public boot prompt |
 
 ## Task navigation
