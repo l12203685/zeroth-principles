@@ -22,6 +22,7 @@
 | `building/negative_list_priority.md` | 負面清單優先於正面目標 (約束=存活語法，目標=成長語義) |
 | `building/derivative_over_level.md` | 變化率 > 絕對值 (看水流不看水位，觀察階數決定反應速度) |
 | `building/population_exploit.md` | 群眾反向 (共識=已定價=沒edge，辨識群眾滯後方向反向操作) |
+| `building/information_asymmetry_action.md` | 資訊不對稱→行動 (有edge就打，沒edge就等；框架edge是最可持續的優勢) |
 | `agent/prompt.md` | Public boot prompt |
 
 ## Task navigation
