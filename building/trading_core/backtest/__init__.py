@@ -1,18 +1,28 @@
-"""Backtest harness (M2 MVP).
+"""Backtest package.
 
-Minimal, self-contained backtest framework:
-- Feed historical OHLCV + strategy callable -> equity curve, trade log, metrics.
-- Market-order fills at bar close, configurable commission, zero slippage.
-- Decoupled from `trading_core.strategy.BaseStrategy` (no broker deps).
+Two engines available:
 
-Public API:
+MVP harness (harness.py)
+------------------------
+Minimal, self-contained: fills at bar close, fraction-of-notional commission,
+zero slippage, fixed size.
+
+    from trading_core.backtest import Backtester, BacktestConfig
+
+Advanced engine (engine.py)
+----------------------------
+Full fee/slippage/sizing + PaperOrderManager integration:
+- Commission: fraction-of-notional OR flat per-contract.
+- Slippage: none, fixed-ticks, or percentage.
+- Sizing: fixed, percent-of-equity, or fractional-Kelly.
+- Fills at next-bar open for realism.
+
     from trading_core.backtest import (
-        Backtester,
-        BacktestConfig,
-        BacktestResult,
-        Signal,
-        Trade,
-        sma_cross_strategy,
+        BacktestEngine,
+        EngineConfig,
+        CommissionMode,
+        SlippageMode,
+        SizingMode,
     )
 """
 
@@ -25,8 +35,16 @@ from trading_core.backtest.harness import (
     BarContext,
 )
 from trading_core.backtest.strategies import sma_cross_strategy
+from trading_core.backtest.engine import (
+    BacktestEngine,
+    EngineConfig,
+    CommissionMode,
+    SlippageMode,
+    SizingMode,
+)
 
 __all__ = [
+    # MVP harness
     "Backtester",
     "BacktestConfig",
     "BacktestResult",
@@ -34,4 +52,10 @@ __all__ = [
     "Trade",
     "BarContext",
     "sma_cross_strategy",
+    # Advanced engine
+    "BacktestEngine",
+    "EngineConfig",
+    "CommissionMode",
+    "SlippageMode",
+    "SizingMode",
 ]
