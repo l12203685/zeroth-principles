@@ -24,6 +24,7 @@
 | `building/population_exploit.md` | 群眾反向 (共識=已定價=沒edge，辨識群眾滯後方向反向操作) |
 | `building/information_asymmetry_action.md` | 資訊不對稱→行動 (有edge就打，沒edge就等；框架edge是最可持續的優勢) |
 | `building/meta_strategy_over_strategy.md` | 元策略>策略 (資金曲線>單筆交易；籌碼管理>單局牌果；讀桌面>讀單人；職涯軌跡>單份工作) |
+| `building/bias_toward_inaction.md` | 偏向不行動 (無edge=不動≠不想；過度行動毀edge；沉默作為戰術；與公設二合成二元開關) |
 | `agent/prompt.md` | Public boot prompt |
 
 ## Task navigation
