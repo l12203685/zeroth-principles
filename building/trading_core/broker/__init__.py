@@ -10,6 +10,7 @@ from .orders import (
     PaperOrderManager,
     create_order_manager,
 )
+from .shioaji_broker import ShioajiOrderManager
 
 __all__ = [
     "get_api",
@@ -21,5 +22,6 @@ __all__ = [
     "OrderStatus",
     "OrderType",
     "PaperOrderManager",
+    "ShioajiOrderManager",
     "create_order_manager",
 ]

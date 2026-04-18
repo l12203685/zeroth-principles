@@ -471,8 +471,11 @@ def create_order_manager(
     broker = broker.lower()
     if broker == "paper":
         return PaperOrderManager(**kwargs)
+    if broker == "shioaji":
+        # Import here to avoid hard dependency on shioaji for non-live usage
+        from trading_core.broker.shioaji_broker import ShioajiOrderManager  # noqa: PLC0415
+        return ShioajiOrderManager(**kwargs)
     raise ValueError(
         f"Unknown broker {broker!r}. "
-        "Available: 'paper'. "
-        "For live brokers, import ShioajiOrderManager directly."
+        "Available: 'paper', 'shioaji'."
     )
