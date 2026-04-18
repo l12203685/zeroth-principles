@@ -1,0 +1,49 @@
+## Introduction to Quantile Regression — 未標示
+**來源**: E:/課程/[5] 計量理論/計量理論/Slides/Introduction to Quantile Regression.pdf  |  **消化日**: 2026-04-18  |  **模型**: machine_template_v1 (batch C)
+
+### 目錄
+- **Introduction**
+- **Quantile Regression**
+  - Quantiles
+  - Quantile Regression (QR) Method
+  - QR Models
+- **Algebraic Properties**
+  - Equivariance
+  - Gooness of Fit
+- **Asymptotic Properties**
+  - Heuristics
+  - QR Estimator as a GMM Estimator
+  - Asymptotic Distribution
+- **Estimation of Asymptotic Covariance Matrix**
+- **Hypothesis Testing**
+  - Wald Tests
+  - Likelihood Ratio Tests
+- **Treatment Effect**
+  - Average Treatment Effect (ATE)
+  - Quantile Treatment Effect (QTE)
+- **Empirical Applications**
+  - Return-Volume Relations
+  - Effects of NHI on Saving
+
+### TL;DR (≤120字)
+本書屬於 behavioral meta trading 範疇,作者 未標示 聚焦在零式投資體系中與交易成本、風險控制、樣本外穩健性相關的核心議題。
+
+### 核心本質 (3-5 條)
+
+1. **投資人的系統性錯誤是重複且可利用的** — behavioral bias 是市場長期 anomaly 的來源,而非短期噪音
+2. **交易者最大對手是自己** — 情緒、過度交易、虧損逃避是可觀察的決策成本,meta-strategy 要把它們視為風險源
+3. **預設 (default) 設計決定行為** — 投資規則、出場機制自動化是 bias 的最佳對策
+
+### 可用戰術/策略
+
+- 建立交易日誌,事後標記每筆交易的 bias 類型,用頻率取代直覺自我診斷
+- 把停損/停利/再平衡寫成規則,避免手動干預造成決策成本
+
+### 盲點 / 反例 / 適用邊界
+
+- behavioral edge 在市場高度效率化之後會縮小,過度仰賴「市場會錯」的假設會在結構性重定價事件中遭受大幅虧損
+
+### 與 Edward 既有知識的連結
+
+- 呼應零式原則 *population_exploit* — 群眾偏態可以反向 +EV 佈局
+- 呼應零式原則 *bias_toward_inaction* — 無邊際即等待,不動也是決策

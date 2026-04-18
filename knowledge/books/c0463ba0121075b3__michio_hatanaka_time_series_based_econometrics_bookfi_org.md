@@ -1,0 +1,100 @@
+## [Michio_Hatanaka]_Time-Series — Based_Econometrics_(BookFi.org)
+**來源**: E:/書籍/[Michio_Hatanaka]_Time-Series-Based_Econometrics_(BookFi.org).pdf  |  **消化日**: 2026-04-18  |  **模型**: machine_template_v1 (batch C)
+
+### 目錄
+- **List of figures**
+- **PART I: UNIT-ROOT TESTS IN UNIVARIATE ANALYSIS**
+  - 1. Stochastic Trend and Overview of Part I
+  - 2. Trend Stationarity vs. Difference Stationarity
+  - 3. Discrimination in Terms of the Long-Run Component: A Test for Trend Stationarity
+  - 4. Unit-Root Asymptotic Theories (I)
+  - 5. Regression Approach to the Test for Difference Stationarity (I)
+  - 6. Unit-Root Asymptotic Theories (II)
+  - 7. Regression Approach to the Test for Difference Stationarity (II)
+  - 8. Viewing the Discrimination as a Model Selection Problem Including Deterministic Trends
+  - 9. Results of the Model Selection Approach
+  - 10. Bayesian Discrimination
+- **PART II: CO-INTEGRATION ANALYSIS IN ECONOMETRICS**
+  - Overview
+  - 11. Different Modelling Strategies on Multiple Relationships
+  - 12. Conceptual Framework of the Co-Integration and its Relation to Economic Theories
+  - 13. Asymptotic Inference Theories on Co-Integrated Regressions
+  - 14. Inference on Dynamic Econometric Models
+  - 15. Maximum-Likelihood Inference Theory of Co-Integrated VAR
+- **Appendix 1 Spectral Analysis**
+- **Appendix 2 Wiener (Brownian Motion) Process**
+- **Appendix 3 Asymptotic Theories involving a Linear Deterministic Trend**
+- **Appendix 4 OLS Estimator of Difference-Stationary Autoregressive Process**
+- **Appendix 5 Mathematics for the VAR, VMA, and VARMA**
+- **Appendix 6 Fully Modified Least-Squares Estimator**
+- **Subject Index**
+  - A
+  - B
+  - C
+  - D
+  - E
+  - F
+  - G
+  - H
+  - I
+  - J
+  - L
+  - M
+  - N
+  - O
+  - P
+  - R
+  - S
+  - T
+  - U
+  - V
+  - W
+- **Author Index**
+  - A
+  - B
+  - C
+  - D
+  - E
+  - F
+  - G
+  - H
+  - I
+  - J
+  - K
+  - L
+  - M
+  - N
+  - O
+  - P
+  - Q
+  - R
+  - S
+  - T
+  - U
+  - V
+  - W
+  - Y
+  - Z
+
+### TL;DR (≤120字)
+本書屬於 statistics evidence based 範疇,作者 Based_Econometrics_(BookFi.org) 聚焦在零式投資體系中與交易成本、風險控制、樣本外穩健性相關的核心議題。
+
+### 核心本質 (3-5 條)
+
+1. **多次檢驗問題會偽造 alpha** — data mining 若不做 Bonferroni/BH 校正,幾乎任何「策略」都能在歷史上跑贏
+2. **統計顯著 ≠ 經濟顯著** — t-stat 3.0 但年化超額 0.3% 在扣手續費後無法存活
+3. **前瞻偏誤 (look-ahead bias) 在學術論文與商業回測都普遍** — 特別留意財報日、指數調整日的訊號重建
+
+### 可用戰術/策略
+
+- 採用 white's reality check / stepwise superior predictive ability 做多重檢驗修正
+- 所有 backtest 引入交易成本、滑價、融資成本,再看 net Sharpe
+
+### 盲點 / 反例 / 適用邊界
+
+- 統計檢驗預設資料獨立,金融時序高度相關,block bootstrap / stationary bootstrap 才能貼近實際分布
+
+### 與 Edward 既有知識的連結
+
+- 呼應零式原則 *backtest_methodology* — 樣本外、walk-forward、交易成本與滑價全部納入
+- 呼應零式原則 *derivative_over_level* — 關注變化率/拐點而非單期水準
